@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "catppuccin:block/mocha_red_concrete"
+    }
+  }
+}

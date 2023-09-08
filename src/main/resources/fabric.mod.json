@@ -1,34 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "catppuccin",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
+	"name": "Catppuccin Mod",
+	"description": "Add building blocks that use the Catppuccin color palette to Minecraft",
+	"authors": ["Turito Yuenan"],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://turitoyuenan.github.io/",
+		"sources": "https://github.com/TuritoYuenan/"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/catppuccin/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
+		"main": ["vn.turito.catppuccin.CTPMod"],
+		"client": ["vn.turito.catppuccin.CTPModClient"],
+		"fabric-datagen": ["vn.turito.catppuccin.CTPModDataGenerator"]
 	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
+	"mixins": ["catppuccin.mixins.json"],
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
